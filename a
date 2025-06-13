@@ -1,0 +1,22 @@
+from getpass import getpass as input
+from random import choice
+
+print("kamień, papier, nożyce")
+print()
+print("Witaj w grze 'kamień, papier, nożyce'!")
+print("Zasady są proste:")
+print("kamień bije nożyce, nożyce biją papier, a papier bije kamień.")
+print("""
+P = papier
+K = kamień
+N = nożyce
+""")")
+Gracz1 = input("Gracz 1, wybierz swój ruch: ").upper()
+Gracz2 = choice(['P', 'K', 'N'])
+print("Gracz 2 wybrał:", Gracz2)
+if Gracz1 == Gracz2:
+    print("Remis!")
+elif (Gracz1 == 'P' and Gracz2 == 'K') or (Gracz1 == 'K' and Gracz2 == 'N') or (Gracz1 == 'N' and Gracz2 == 'P'):
+    print("Gratulacje, Gracz 1 wygrał!")
+else:
+    print("Gratulacje, Gracz 2 wygrał!")
