@@ -10,7 +10,7 @@ print("""
 P = papier
 K = kamień
 N = nożyce
-""")")
+""")
 Gracz1 = input("Gracz 1, wybierz swój ruch: ").upper()
 Gracz2 = choice(['P', 'K', 'N'])
 print("Gracz 2 wybrał:", Gracz2)
